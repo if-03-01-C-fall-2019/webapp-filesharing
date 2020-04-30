@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.parallax {
+  background-image: url("../images/sharingpara.jpg");
+  min-height: 720px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+        text-align: center;
+        font-size: 30pt;
+        color: #B1861D;
+        font-family: Georgia;
+        font-weight: bold;
+        margin-bottom: 50px;
+        margin-top: 50pt;
+}
+.ueberschrift
+{
+  float: none;
+
+}
+
+#ueberschrift2{
+  color: white;
+}
+	.image{
+	opacity: 1;
+	filter: alpha(opacity=100);
+	display: block;
+}
+.image:hover
+    {
+			opacity: 0.5;
+      filter: alpha(opacity=50);
+    }
+img{
+  float: left;
+  padding: 50px;
+  border-radius: 100px;
+}
+.button:hover{
+  background-color: #707173;
+}
+.button
+{
+	display: block;
+	background-color: #000000;
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+	text-align: center;
+}
+#a{
+  	list-style: none;
+  	color: white;
+}
+#buttons{
+  padding: 50px;
+}
+
+h2{
+    font-family: monospace;
+    margin-bottom: 20px;
+    font-style: italic;
+    font-size: 17pt;
+}
+body {
+  	background-image: url("../images/back.jpg");
+  	background-repeat: no-repeat;
+		background-position: center;
+ 		background-size: cover;
+}
+
+nav {
+ overflow: hidden;
+ background-color: #f2f2f2;
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+}
+
+nav a {
+ float: left;
+ display: block;
+ color: #080808;
+ text-align: center;
+ padding: 14px 16px;
+ text-decoration: none;
+ font-family: 'Roboto', sans-serif;
+}
+
+nav a:hover {
+ background: lightgrey;
+ color: black;
+}
+
+li {
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	padding-bottom: 15px;
+}
+p{
+	text-align: center;
+	font-size: 20px;
+  color: white;
+  padding: 2vh 4vw;
+  background-color: #939496;
+}

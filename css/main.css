@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+ * {
+	margin: 0;
+	padding: 0;
+}
+
+.parallax {
+  background-image: url("../images/streets.jpg");
+  min-height: 720px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax2 {
+  background-image: url("../images/street2.jpg");
+  min-height: 720px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+h1 {
+        text-align: center;
+        font-size: 30pt;
+        color: #690c0c;
+        font-family: Verdana;
+        font-weight: bold;
+        margin: 2vh 0 4vh 0;
+}
+
+section{
+	max-width: 960px;
+	margin: auto;
+}
+
+#dangerh1 {
+	margin-top: 6vh;
+	font-size: 60px;
+}
+
+section > p{
+	padding-bottom: 50px;
+}
+h2{
+    font-family: "open sans";
+    margin: 1.5vh 0 1vh;
+    font-style: italic;
+    font-size: 17pt;
+}
+
+h3{
+  font-family: sans-serif;
+	margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+body {
+  text-align: center;
+	font-family: 'Roboto', sans-serif;
+}
+
+nav {
+ overflow: hidden;
+ background-color: #f2f2f2;
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+}
+
+nav a {
+ float: left;
+ display: block;
+ color: #080808;
+ text-align: center;
+ padding: 14px 16px;
+ text-decoration: none;
+}
+
+nav a:hover {
+ background: lightgrey;
+ color: black;
+}
+ul{
+    list-style-position: inside;
+    text-align: left;
+    margin-left: 35%;
+		padding: 20pt;
+}
+span {
+	font-weight: bold;
+}
