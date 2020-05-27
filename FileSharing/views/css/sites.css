@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.FadeIn
+{
+  animation : fadein 2s;
+}
+
+#dropboxhead{ color : #007EE5; }
+#droplrhead{color: #9267D3;}
+#googledrivehead{color: #20A464;}
+#megahead{color: #E5080F;}
+#NextCloudhead{color: #4CA7D9;}
+.backbutton
+{
+	display: block;
+	width: 5vw;
+	height: 2vw;
+	background-color: #000000;
+	color: #ffffff;
+	border-radius: 2vw;
+	text-align: center;
+}
+h1 {
+        text-align: center;
+        font-size: 30pt;
+        color: #c1c0c0;
+        font-family: impact;
+        font-weight: bold;
+        margin-bottom: 50px;
+        margin-top: 50pt;
+      }
+img{
+  float: right;
+  width: 700px;
+  height: 400px;
+}
+#dropimg{
+  float: right;
+  width: 500px;
+  height: 500px;
+}
+p{
+  color: white;
+  font-size: 20px;
+	padding: 2vw;
+	text-align: justify;
+}
+body {
+
+  background-repeat: no-repeat;
+  background-size: auto;
+	background-image: linear-gradient( grey, white);
+}
+
+nav {
+ overflow: hidden;
+ background-color: #f2f2f2;
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+}
+
+nav a {
+ float: left;
+ display: block;
+ color: #080808;
+ text-align: center;
+ padding: 14px 16px;
+ text-decoration: none;
+ font-family: 'Roboto', sans-serif;
+}
+
+nav a:hover {
+ background: white;
+ color: black;
+}
