@@ -10,10 +10,10 @@ const flash = require('express-flash')
 const session = require('express-session')
 const methodOverride = require('method-override')
 
-var http = require('http').Server(app);
-var io = require('socket.io')(http);
-var path = require('path');
-var router = express.Router();
+let http = require('http').Server(app);
+let io = require('socket.io')(http);
+let path = require('path');
+let router = express.Router();
 
 app.use(express.static(__dirname + 'views'));
 app.use('/html', express.static(path.join(__dirname, '/views/html')));
@@ -22,7 +22,7 @@ app.use('/images', express.static(path.join(__dirname, '/views/images')));
 app.use('/', express.static(path.join(__dirname, 'views/filesharing.js')));
 
 app.get('/', function(req, res){
-    res.sendFile(__dirname + '/views/html/filesharing.html');
+    res.sendFile(__dirname + '/views/html/main.html');
 });
 app.get('/dangers', function(req, res){
     res.sendFile(__dirname + '/views/html/dangers.html');
