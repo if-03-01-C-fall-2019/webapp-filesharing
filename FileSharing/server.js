@@ -19,6 +19,7 @@ app.use(express.static(__dirname + 'views'));
 app.use('/html', express.static(path.join(__dirname, '/views/html')));
 app.use('/css', express.static(path.join(__dirname, '/views/css')));
 app.use('/images', express.static(path.join(__dirname, '/views/images')));
+app.use('/', express.static(path.join(__dirname, 'views/filesharing.js')));
 
 app.get('/', function(req, res){
     res.sendFile(__dirname + '/views/html/main.html');
@@ -47,6 +48,10 @@ app.get('/NextCloud', function(req, res){
 app.get('/sharing', function(req, res){
     res.sendFile(__dirname + '/views/html/sharing.html');
 });
+app.get('/filesharing', function(req, res){
+    res.sendFile(__dirname + '/views/html/filesharing.html');
+});
+
 
 const initializePassport = require('./passport-config')
 initializePassport(
