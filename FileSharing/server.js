@@ -22,7 +22,7 @@ app.use('/images', express.static(path.join(__dirname, '/views/images')));
 app.use('/', express.static(path.join(__dirname, 'views/filesharing.js')));
 
 app.get('/', function(req, res){
-    res.sendFile(__dirname + '/views/html/main.html');
+    res.sendFile(__dirname + '/views/html/filesharing.html');
 });
 app.get('/dangers', function(req, res){
     res.sendFile(__dirname + '/views/html/dangers.html');
