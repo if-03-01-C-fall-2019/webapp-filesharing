@@ -48,7 +48,7 @@ app.get('/NextCloud', function(req, res){
 app.get('/sharing', function(req, res){
     res.sendFile(__dirname + '/views/html/sharing.html');
 });
-app.get('/filesharing', function(req, res){
+app.get('/filesharing', checkAuthenticated, function(req, res){
     res.sendFile(__dirname + '/views/html/filesharing.html');
 });
 
