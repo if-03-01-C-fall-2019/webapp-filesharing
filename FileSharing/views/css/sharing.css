@@ -111,3 +111,14 @@ p{
   padding: 2vh 4vw;
   background-color: #939496;
 }
+.logout
+{
+  margin-left: 700px;
+	display: block;
+	width: 5vw;
+	height: 2vw;
+	background-color: #000000;
+	color: #ffffff;
+	border-radius: 2vw;
+	text-align: center;
+}
