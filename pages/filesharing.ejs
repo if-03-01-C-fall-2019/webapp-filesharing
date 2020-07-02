@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FilePond from CDN</title>
+
+  <!-- Filepond stylesheet -->
+  <link href="/css/filesharing.css" rel="stylesheet" type="text/css">
+  <link href="https://unpkg.com/filepond/dist/filepond.css" rel="stylesheet">
+  <script src="https://unpkg.com/filepond/dist/filepond.js"></script>
+  <script defer src="https://unpkg.com/filepond/dist/filepond.js"></script>
+  <script defer type="text/javascript" src="../filesharing.js"></script>
+  <script defer src="https://unpkg.com/filepond-plugin-file-encode/dist/filepond-plugin-file-encode.js"></script>
+
+
+</head>
+<body>
+  <nav>
+    <a href="index">Main</a>
+    <a href="dangers">Dangers</a>
+    <a href="sharing">Sharing</a>
+    <a href="login">Sign in</a>
+    <a href="register">Sign Up</a>
+    <a href="filesharing">filesharing</a>
+  </nav>
+  <p>__</p>
+  <main>
+    <h2 class = "headline">Upload your file</h2>
+    <br>
+    <section class = "row">
+
+
+          <input type="file" class="filepond"></input>
+          <script>
+          FilePond.parse(document.body);
+          </script>
+      <section class = "column right">
+        <h2>Hier werden die Files angezeigt!</h2>
+      </section>
+    </section>
+    <form action="/logout?_method=DELETE" method="POST">
+      <button class="logout" type="submit">Log Out</button>
+  </main>
+  <!-- We'll transform this input into a pond -->
+
+
+</body>
+</html>
